@@ -1,13 +1,10 @@
 class AppConfig {
   // Backend URLs (multiple for reliability)
   static const List<String> backendUrls = [
-    'https://vib3-production.up.railway.app',
-    'http://66.33.22.132',         // Railway IP - HTTP fallback for Samsung
-    'https://66.33.22.132',        // Railway IP - HTTPS 
-    'http://192.168.1.100:3000',   // Local HTTP fallback
-    'https://192.168.1.100:3000',  // Local HTTPS fallback
+    'https://vib3-web-xxxxx.ondigitalocean.app',  // UPDATE THIS with your DO app URL
     'http://10.0.2.2:3000',        // Android emulator localhost
-    'https://vib3.onrender.com',   // Alternative hosting
+    'http://localhost:3000',       // iOS simulator localhost
+    'http://192.168.1.100:3000',   // Local network (update with your IP)
   ];
   
   static String get baseUrl => backendUrls[0]; // Default
